@@ -6,7 +6,7 @@ ClassLog は授業の出欠・宿題・テスト・演習を記録し、報告�
 ## ダウンロード
 
 - 最新版: [Releases ページ](https://github.com/sky-wing1/classlog-releases/releases/latest) の `ClassLog_x.y.z_universal.dmg`
-- 現在の版（v0.4.0）: [ClassLog_0.4.0_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v0.4.0/ClassLog_0.4.0_universal.dmg)
+- 現在の版（v1.0.0）: [ClassLog_1.0.0_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.0.0/ClassLog_1.0.0_universal.dmg)
 
 Apple Silicon と Intel のどちらの Mac も同じ DMG で動きます。
 
@@ -87,7 +87,7 @@ Finder から開く場合は `移動` › `フォルダへ移動` に上のパ�
 
 ### 印刷した PDF の保存場所
 
-報告書や座席表を印刷すると、同じ PDF が上のフォルダの中の `印刷履歴` に日時とクラス名付きで残ります（v0.4.1 以降。それより前の版では `~/Downloads/ClassLog` です）。印刷ダイアログの `保存先を開く` で Finder から開けます。保存に失敗しても印刷は行われ、ダイアログにその理由が出ます。
+報告書や座席表を印刷すると、同じ PDF が上のフォルダの中の `印刷履歴` に日時とクラス名付きで残ります（v1.0.0 以降。それより前の版では `~/Downloads/ClassLog` です）。印刷ダイアログの `保存先を開く` で Finder から開けます。保存に失敗しても印刷は行われ、ダイアログにその理由が出ます。
 たまった PDF は不要になったら `印刷履歴` の中のファイルを削除して構いません（記録のデータベースとは別のファイルです）。生徒情報を含むので、共有フォルダには置かないでください。
 
 ## 更新
@@ -96,7 +96,7 @@ ClassLog は起動時に新しい版があるかを確認し、あれば画面�
 
 1. 入力中の内容を保存します。
 2. `今すぐ更新` を押します。ダウンロードが終わるとアプリが自動で再起動します。
-3. 再起動後、ホーム画面の左上に新しいバージョン番号（`v0.4.1` など）が表示されます。
+3. 再起動後、ホーム画面の左上に新しいバージョン番号（`v1.0.0` など）が表示されます。
 
 `後で` を押すと、次回起動時にまた表示されます。
 手動で確認するときは、ホーム画面のバージョン番号の横にある `更新を確認` を押します。
