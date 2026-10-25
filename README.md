@@ -6,9 +6,14 @@ ClassLog は授業の出欠・宿題・テスト・演習を記録し、報告�
 ## ダウンロード
 
 - 最新版: [Releases ページ](https://github.com/sky-wing1/classlog-releases/releases/latest) の `ClassLog_x.y.z_universal.dmg`
-- 現在の版（v1.0.0）: [ClassLog_1.0.0_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.0.0/ClassLog_1.0.0_universal.dmg)
+- 現在の版（v1.1.0）: [ClassLog_1.1.0_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.1.0/ClassLog_1.1.0_universal.dmg)
 
 Apple Silicon と Intel のどちらの Mac も同じ DMG で動きます。
+
+## 機能紹介
+
+- [入力・座席表・生徒カルテなど](https://github.com/sky-wing1/classlog-releases/releases/download/v1.1.0/classlog-features-classroom-v2.png)
+- [分析・講評・報告書・CSV](https://github.com/sky-wing1/classlog-releases/releases/download/v1.1.0/classlog-features-reports-v2.png)
 
 ## 必要なもの
 
@@ -46,23 +51,13 @@ Apple Silicon と Intel のどちらの Mac も同じ DMG で動きます。
 ## PDF 出力の準備
 
 週報と座席表の PDF は `PyMuPDF`、家庭宛報告書は `WeasyPrint` という Python ライブラリを使います。
-ターミナルで次を実行すると確認できます。エラーが出なければ準備済みです。
+初回の「使い方」ガイドで「PDF 出力の準備」を開くと、実際に短い PDF を生成して利用できるか確認します。あとからホームの「使い方」でも開けます。
 
-```bash
-python3 -c "import fitz; print('PyMuPDF', fitz.__doc__)"
-```
+1. 「準備が必要です」と表示されたら「ライブラリを導入」を押します。インターネットからダウンロードし、ClassLog 専用の Python 環境に保存します。
+2. Python 本体がない場合は、画面の python.org のリンクから Python 3.10 以上を導入し、「再確認」を押します。
+3. 家庭宛報告書が利用できない場合は、画面の WeasyPrint の導入案内を確認してください。Pango も必要です。Homebrew がある Mac では `brew install pango` で導入できます。
 
-```bash
-python3 -c "import weasyprint; print('WeasyPrint', weasyprint.__version__)"
-```
-
-入っていない場合の導入は、Mac 側の設定に左右されるため配布担当者と一緒に行ってください。
-Homebrew の Python では `pip install` がシステム保護（externally-managed-environment）で拒否されることがあり、WeasyPrint は Pango などのライブラリも必要です。
-参考として、Homebrew を使う場合の例は次のとおりです。
-
-```bash
-brew install python pango && python3 -m pip install --break-system-packages PyMuPDF==1.28.0 WeasyPrint
-```
+Python 本体と Pango はアプリ内のボタンによる自動導入には含まれません。準備をあとにして、授業データの入力を始められます。導入が途中で失敗した場合は再試行できます。
 
 家庭宛報告書のまとめ印刷は鉄TeX の `tetsuconvert` も使います。
 PDF 出力でエラーが出たときは、表示されたメッセージをそのまま配布担当者へ送ってください。アプリは「どの Python を探して何が足りなかったか」を出します。
