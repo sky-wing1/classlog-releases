@@ -6,7 +6,7 @@ ClassLog は授業の出欠・宿題・テスト・演習を記録し、報告�
 ## ダウンロード
 
 - 最新版: [Releases ページ](https://github.com/sky-wing1/classlog-releases/releases/latest) の `ClassLog_x.y.z_universal.dmg`
-- 現在の版（v1.1.0）: [ClassLog_1.1.0_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.1.0/ClassLog_1.1.0_universal.dmg)
+- 現在の版（v1.2.1）: [ClassLog_1.2.1_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.2.1/ClassLog_1.2.1_universal.dmg)
 
 Apple Silicon と Intel のどちらの Mac も同じ DMG で動きます。
 
