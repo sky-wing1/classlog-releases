@@ -3,10 +3,14 @@
 ClassLog は授業の出欠・宿題・テスト・演習を記録し、報告書や座席表を作る Mac 用アプリです。
 このページは、インストールから更新を受け取るまでの手順です。
 
-## ダウンロード
+## 入手方法
+
+ClassLog は鉄TeX に同梱されています。鉄TeX を使っていれば、DMG をダウンロードする必要はありません（下記「インストール」）。
+
+鉄TeX を使わない Mac では、DMG から入れます。
 
 - 最新版: [Releases ページ](https://github.com/sky-wing1/classlog-releases/releases/latest) の `ClassLog_x.y.z_universal.dmg`
-- 現在の版（v1.2.1）: [ClassLog_1.2.1_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.2.1/ClassLog_1.2.1_universal.dmg)
+- 現在の版（v1.2.2）: [ClassLog_1.2.2_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.2.2/ClassLog_1.2.2_universal.dmg)
 
 Apple Silicon と Intel のどちらの Mac も同じ DMG で動きます。
 
@@ -18,18 +22,28 @@ Apple Silicon と Intel のどちらの Mac も同じ DMG で動きます。
 ## 必要なもの
 
 - macOS（Apple Silicon、Intel のどちらも可）
-- 上の DMG
-- PDF 出力・印刷を使う場合: Python 3 と PDF 用ライブラリ（下記「PDF 出力の準備」）
+- 鉄TeX（ClassLog と、PDF 出力に使う TetsuPython が一緒に入ります）
 
-出欠入力、CSV 出力、画面上の統計は Python なしで使えます。
+出欠入力、CSV 出力、画面上の統計は TetsuPython がなくても使えます。
 
 ## インストール
 
-1. DMG をダブルクリックして開きます。
+### 鉄TeX から入れる
+
+- 鉄TeX が入っている Mac: `アプリケーション` の `TetsuTeXUpdater` を起動し、鉄TeX をアップデートします。`アプリケーション` フォルダに `ClassLog` が入ります。
+- これから鉄TeX を入れる Mac: `TetsuTeX.dmg` からインストールすると、`ClassLog` も一緒に入り、Dock に並びます。
+
+入ったら、`アプリケーション` か Dock から `ClassLog` を起動します。
+
+### DMG から入れる
+
+1. 上の DMG をダブルクリックして開きます。
 2. 中の `ClassLog` を `アプリケーション` フォルダへドラッグします。
 3. `アプリケーション` から `ClassLog` を起動します。
 
-配布している DMG とアプリは Apple の署名と公証を受けているので、通常は警告なく開けます。
+この場合、PDF 出力には TetsuPython を別に導入します（下記「PDF 出力の準備」）。
+
+ClassLog は Apple の署名と公証を受けているので、通常は警告なく開けます。
 
 ### 「開けません」と表示されたとき
 
@@ -38,6 +52,7 @@ Apple Silicon と Intel のどちらの Mac も同じ DMG で動きます。
 - macOS 15 以降: 一度ダブルクリックして警告を閉じたあと、`システム設定` › `プライバシーとセキュリティ` を開き、下の方にある「"ClassLog" はブロックされました」の横の `このまま開く` を押します。
 - macOS 14 以前: `アプリケーション` で `ClassLog` を右クリック（control+クリック）して `開く` を選び、確認ダイアログでも `開く` を押します。
 
+許可は 1 回で済み、アプリ内の更新で新しい版になっても再度の許可は不要です。
 「壊れているため開けません」と表示された場合は、配布担当者に連絡してください。
 
 ### 初回起動後の設定
@@ -50,14 +65,13 @@ Apple Silicon と Intel のどちらの Mac も同じ DMG で動きます。
 
 ## PDF 出力の準備
 
-週報と座席表の PDF は `PyMuPDF`、家庭宛報告書は `WeasyPrint` という Python ライブラリを使います。
-初回の「使い方」ガイドで「PDF 出力の準備」を開くと、実際に短い PDF を生成して利用できるか確認します。あとからホームの「使い方」でも開けます。
+PDF は macOS に入っている WebKit で作ります。そのほかに使うのは TetsuPython だけです。鉄TeX から入れた場合は TetsuPython も入っているので、追加で導入するものはありません。PDF 出力には macOS 11 以降が必要です。
+初回の「使い方」ガイドで「PDF 出力の準備」を開くと、TetsuPython が見つかるか確認します。あとからホームの「使い方」でも開けます。
 
-1. 「準備が必要です」と表示されたら「ライブラリを導入」を押します。インターネットからダウンロードし、ClassLog 専用の Python 環境に保存します。
-2. Python 本体がない場合は、画面の python.org のリンクから Python 3.10 以上を導入し、「再確認」を押します。
-3. 家庭宛報告書が利用できない場合は、画面の WeasyPrint の導入案内を確認してください。Pango も必要です。Homebrew がある Mac では `brew install pango` で導入できます。
+1. 「TetsuPython が見つかりました。PDF を出力できます。」と表示されれば準備は終わりです。
+2. 見つからない場合は TetsuPython を導入し、「再確認」を押します。
 
-Python 本体と Pango はアプリ内のボタンによる自動導入には含まれません。準備をあとにして、授業データの入力を始められます。導入が途中で失敗した場合は再試行できます。
+準備をあとにして、授業データの入力を始められます。
 
 家庭宛報告書のまとめ印刷は鉄TeX の `tetsuconvert` も使います。
 PDF 出力でエラーが出たときは、表示されたメッセージをそのまま配布担当者へ送ってください。アプリは「どの Python を探して何が足りなかったか」を出します。
@@ -101,7 +115,9 @@ ClassLog は起動時に新しい版があるかを確認し、あれば画面�
 
 ## 困ったとき
 
-配布担当者に次の 4 点を伝えてください。
+アプリの左下にある「報告」（ホーム画面では上部の「開発者に報告」）から、不具合や改善の提案を開発者に送れます。アプリのバージョン、macOS のバージョン、開いていた画面は自動で添えられます。生徒の名前は送る前に〔生徒〕に置き換わり、送る内容は送信の前に確かめられます。インターネットにつながっていないときはこの Mac に保存され、次に起動したときに送られます。
+
+報告が使えないときは、配布担当者に次の 4 点を伝えてください。
 
 - ClassLog のバージョン（ホーム画面左上の `v` で始まる番号）
 - macOS のバージョン（Apple メニュー › `この Mac について`）
