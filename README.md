@@ -10,7 +10,7 @@ ClassLog は鉄TeX に同梱されています。鉄TeX を使っていれば、
 鉄TeX を使わない Mac では、DMG から入れます。
 
 - 最新版: [Releases ページ](https://github.com/sky-wing1/classlog-releases/releases/latest) の `ClassLog_x.y.z_universal.dmg`
-- 現在の版（v1.3.1）: [ClassLog_1.3.1_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.3.1/ClassLog_1.3.1_universal.dmg)
+- 現在の版（v1.3.2）: [ClassLog_1.3.2_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.3.2/ClassLog_1.3.2_universal.dmg)
 
 Apple Silicon と Intel のどちらの Mac も同じ DMG で動きます。
 
