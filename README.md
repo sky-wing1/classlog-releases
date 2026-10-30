@@ -10,7 +10,7 @@ ClassLog は鉄TeX に同梱されています。鉄TeX を使っていれば、
 鉄TeX を使わない Mac では、DMG から入れます。
 
 - 最新版: [Releases ページ](https://github.com/sky-wing1/classlog-releases/releases/latest) の `ClassLog_x.y.z_universal.dmg`
-- 現在の版（v1.3.3）: [ClassLog_1.3.3_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.3.3/ClassLog_1.3.3_universal.dmg)
+- 現在の版（v1.3.4）: [ClassLog_1.3.4_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.3.4/ClassLog_1.3.4_universal.dmg)
 
 Apple Silicon と Intel のどちらの Mac も同じ DMG で動きます。
 
@@ -107,7 +107,7 @@ ClassLogは起動時に新しい版があるかを確認し、あれば画面右
 
 1. 入力中の内容を保存します。
 2. `今すぐ更新`を押します。ダウンロードが終わるとアプリが自動で再起動します。
-3. 再起動後、サイドバーの下部に新しいバージョン番号（`v1.3.3`など）が表示されます。
+3. 再起動後、サイドバーの下部に新しいバージョン番号（`v1.3.4`など）が表示されます。
 
 `後で`を押すと、次回起動時にまた表示されます。
 手動で確認するときは、サイドバー下部の`更新を確認`を押します。サイドバーを折りたたんでいるときは、同じ位置の更新アイコンから開けます。
@@ -122,6 +122,12 @@ ClassLogは起動時に新しい版があるかを確認し、あれば画面右
 週次入力画面の上部にある`入力後の移動`で、`右へ`・`下へ`・`移動しない`を選べます。選択はこのMacに保存され、入力表と座席表の入力欄に共通で適用されます。初期値は`右へ`です。
 
 記号キーで入力した後と、得点・遅刻分数でEnterを押した後に適用します。`下へ`は次の生徒の同じ項目に進み、欠席者の得点欄などを飛ばします。Tab・矢印では手動で移動でき、Shift+Enterは選んだ方向と逆へ進みます。
+
+## 名前で入力する際のローマ字検索
+
+登録されたかなに基づき、ishikawa / isikawa、chi / ti、tsu / tuなどの表記の違いを受け付けます。拗音・促音の表記を混ぜた入力や、入力途中の文字でも検索できます。
+
+候補が多いときは候補欄の中をスクロールできます。現在は↑↓キーの選択に表示位置が追従しないため、画面外の候補を選ぶ場合は候補欄をスクロールして対象の名前を確認してください。
 
 ## 困ったとき
 
