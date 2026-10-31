@@ -10,7 +10,7 @@ ClassLog は鉄TeX に同梱されています。鉄TeX を使っていれば、
 鉄TeX を使わない Mac では、DMG から入れます。
 
 - 最新版: [Releases ページ](https://github.com/sky-wing1/classlog-releases/releases/latest) の `ClassLog_x.y.z_universal.dmg`
-- 現在の版（v1.3.4）: [ClassLog_1.3.4_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.3.4/ClassLog_1.3.4_universal.dmg)
+- 現在の版（v1.3.5）: [ClassLog_1.3.5_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.3.5/ClassLog_1.3.5_universal.dmg)
 
 Apple Silicon と Intel のどちらの Mac も同じ DMG で動きます。
 
@@ -107,7 +107,7 @@ ClassLogは起動時に新しい版があるかを確認し、あれば画面右
 
 1. 入力中の内容を保存します。
 2. `今すぐ更新`を押します。ダウンロードが終わるとアプリが自動で再起動します。
-3. 再起動後、サイドバーの下部に新しいバージョン番号（`v1.3.4`など）が表示されます。
+3. 再起動後、サイドバーの下部に新しいバージョン番号（`v1.3.5`など）が表示されます。
 
 `後で`を押すと、次回起動時にまた表示されます。
 手動で確認するときは、サイドバー下部の`更新を確認`を押します。サイドバーを折りたたんでいるときは、同じ位置の更新アイコンから開けます。
