@@ -10,7 +10,7 @@ ClassLog は鉄TeX に同梱されています。鉄TeX を使っていれば、
 鉄TeX を使わない Mac では、DMG から入れます。
 
 - 最新版: [Releases ページ](https://github.com/sky-wing1/classlog-releases/releases/latest) の `ClassLog_x.y.z_universal.dmg`
-- 現在の版（v1.3.10）: [ClassLog_1.3.10_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.3.10/ClassLog_1.3.10_universal.dmg)
+- 現在の版（v1.3.11）: [ClassLog_1.3.11_universal.dmg](https://github.com/sky-wing1/classlog-releases/releases/download/v1.3.11/ClassLog_1.3.11_universal.dmg)
 
 Apple Silicon と Intel のどちらの Mac も同じ DMG で動きます。
 
@@ -107,7 +107,7 @@ ClassLogは起動時に新しい版があるかを確認し、あれば画面右
 
 1. 入力中の内容を保存します。
 2. `今すぐ更新`を押します。ダウンロードが終わるとアプリが自動で再起動します。
-3. 再起動後、サイドバーの下部に新しいバージョン番号（`v1.3.10`など）が表示されます。
+3. 再起動後、サイドバーの下部に新しいバージョン番号（`v1.3.11`など）が表示されます。
 
 `後で`を押すと、次回起動時にまた表示されます。
 手動で確認するときは、サイドバー下部の`更新を確認`を押します。サイドバーを折りたたんでいるときは、同じ位置の更新アイコンから開けます。
@@ -116,6 +116,10 @@ ClassLogは起動時に新しい版があるかを確認し、あれば画面右
 
 更新後も同じデータ保存先を使います。更新前には上記の手順でデータフォルダをバックアップしてください。
 「アップデートに失敗しました」と出たときは、配布担当者から新しいDMGを受け取り、`アプリケーション`の`ClassLog`を置き換えてください。データはそのまま使えます。
+
+## 家庭宛Excelの未評価記号
+
+家庭宛Excelへの転記では、未評価を原本と同じ半角ハイフン「-」で出力します。修正前の版で出力したファイルは、更新後に別名で出力し直してください。講評中の数学記号は保持します。
 
 ## 居残・追試アラート
 
